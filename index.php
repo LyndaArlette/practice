@@ -10,7 +10,10 @@
 		$sql= query("INSERT INTO register(FirstName,LastName,Username,Password) VALUES('$fname','$lname','$Uname','$password')");
 
 		if($sql){
-			echo"Yes";
+			echo"Inserted successfully";
+		}
+		else{
+			echo"try again";
 		}
 	}
 ?>
