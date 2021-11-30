@@ -8,6 +8,10 @@
 		$password=$_POST['psswrd'];
 
 		$sql= query("INSERT INTO register(FirstName,LastName,Username,Password) VALUES('$fname','$lname','$Uname','$password')");
+
+		if($sql){
+			echo"Yes";
+		}
 	}
 ?>
 <html>
