@@ -7,7 +7,7 @@
 		$Uname=$_POST['un'];
 		$password=$_POST['psswrd'];
 
-		$sql= query("INSERT INTO register(FirstName,LastName,Username,Password) VALUES()")
+		$sql= query("INSERT INTO register(FirstName,LastName,Username,Password) VALUES('$fname','$lname','$Uname','$password')");
 	}
 ?>
 <html>
